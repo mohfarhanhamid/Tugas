@@ -13,7 +13,7 @@
         <meta name="description" content="Repository Untuk Tugas">
       
       
-        <link rel="canonical" href="https://mohfarhanhamid.github.io/tugas1/">
+        <link rel="canonical" href="https://mohfarhanhamid.github.io/richardson/">
       
       
         <meta name="author" content="Moh.Farhan Hamid">
@@ -42,7 +42,7 @@
     
     
       
-        <title>error - (180411100132) Moh.Farhan Hamid</title>
+        <title>richardson - (180411100132) Moh.Farhan Hamid</title>
       
     
     
@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#eror-di-komputasi-numerik" tabindex="1" class="md-skip">
+      <a href="#richardson-extrapolation" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                error
+                richardson
               
             </span>
           
@@ -444,56 +444,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        error
-      </label>
-    
-    <a href="./" title="error" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tugas1/" title="error" class="md-nav__link">
       error
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#definisi-maclaurin" class="md-nav__link">
-    DEFINISI MACLAURIN
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#berikut-algoritma-dari-maclaurin" class="md-nav__link">
-    Berikut algoritma dari maclaurin
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -537,11 +492,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../richardson/" title="richardson" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        richardson
+      </label>
+    
+    <a href="./" title="richardson" class="md-nav__link md-nav__link--active">
       richardson
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teori" class="md-nav__link">
+    Teori
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contoh-program" class="md-nav__link">
+    Contoh Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -571,15 +578,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#definisi-maclaurin" class="md-nav__link">
-    DEFINISI MACLAURIN
+  <a href="#teori" class="md-nav__link">
+    Teori
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#berikut-algoritma-dari-maclaurin" class="md-nav__link">
-    Berikut algoritma dari maclaurin
+  <a href="#contoh-program" class="md-nav__link">
+    Contoh Program
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-running" class="md-nav__link">
+    Hasil Running
   </a>
   
 </li>
@@ -600,125 +614,76 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mohfarhanhamid/edit/master/docs/tugas1.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/mohfarhanhamid/edit/master/docs/richardson.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="eror-di-komputasi-numerik">Eror di komputasi numerik<a class="headerlink" href="#eror-di-komputasi-numerik" title="Permanent link">&para;</a></h1>
-<p>1.round-off error</p>
+                <h1 id="richardson-extrapolation"><strong>Richardson Extrapolation</strong><a class="headerlink" href="#richardson-extrapolation" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>Perhitungan dengan metode numerik hampir selalu menggunakan bilangan riil.Masalah timbul apabila komputasi numerik dikerjakan oleh mesin (dalam hal ini dengan menggunakan komputer) karena semua bilangan riil tidak dapat disajikan secara tepat di dalam komputer</p>
+<p>Dalam analisis numerik, Richardson Extrapolation adalah metode percepatan urutan, yang digunakan untuk meningkatkan laju konvergensi suatu urutan. </p>
+<p>Richardson Extrapolation termasuk integrasi Romberg, yang menerapkan ekstrapolasi Richardson pada aturan trapesium, dan algoritma Bulirsch-Stoer untuk menyelesaikan persamaan diferensial biasa.</p>
 </blockquote>
-<p>2.<strong>Truncation Error</strong></p>
-<blockquote>
-<p>Kesalahan pemotongan terjadi ketika suatu rumus komputasi disederhanakan dengan cara membuang suku yang berderajat tinggi</p>
-</blockquote>
-<p><img alt="png" src="error.png" /></p>
-<p><img alt="png" src="picture1.png" /></p>
-<p><img alt="" src="picture2.png" /></p>
-<h3 id="definisi-maclaurin">DEFINISI MACLAURIN<a class="headerlink" href="#definisi-maclaurin" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Suatu fungsi f(x) yang memiliki turunan <img alt="f'(x)" src="https://s0.wp.com/latex.php?latex=f%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f'''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, dan seterusnya yang kontinyu dalam interval <img alt="I" src="https://s0.wp.com/latex.php?latex=I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dengan <img alt="a, x \in I" src="https://s0.wp.com/latex.php?latex=a%2C+x+%5Cin+I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> maka untuk <img alt="x" src="https://s0.wp.com/latex.php?latex=x&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> disekitar <img alt="a" src="https://s0.wp.com/latex.php?latex=a&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> yaitu <img alt="|x -a| &lt; \mathbb{R}" src="https://s0.wp.com/latex.php?latex=%7Cx+-a%7C+%3C+%5Cmathbb%7BR%7D&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f(x)" src="https://s0.wp.com/latex.php?latex=f%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dapat diekspansi kedalam Deret TaylorDefinisi.</p>
-</blockquote>
-<h3 id="berikut-algoritma-dari-maclaurin">Berikut algoritma dari maclaurin<a class="headerlink" href="#berikut-algoritma-dari-maclaurin" title="Permanent link">&para;</a></h3>
-<p><img alt="png" src="taylor.png" /></p>
-<p>Dengan algoritma diatas kita dapat menyerderhanakannya sebagai berikut:</p>
-<p><img alt="png" src="pendek.png" /></p>
-<p>berikut contoh implementai dari maclaurin</p>
-<p>f(x)= e<sup>2x</sup>
-$$
-f(x)≈1+2x \displaystyle+\frac{{{{f}^{{\text{}}}{\left({2x^2}\right)}}}}{{{3}!}}
-\displaystyle+\frac{{{{f}^{{\text{}}}{\left({2x^3}\right)}}}}{{{3}!}}
-\displaystyle+\ldots+…
-$$</p>
-<p>sekarang kita masukan misal x=0
-$$
-f(0)≈1+2(0) \displaystyle+\frac{{{{}^{{\text{}}}{\left({2(0)^2}\right)}}}}{{{3}!}}
- \displaystyle+\frac{{{{}^{{\text{}}}{\left({2(0)^3}\right)}}}}{{{3}!}}
- \displaystyle+\ldots+…
-$$</p>
-<p>jadi ketika x =0 maka hasil akan tetap 1 mekipun banyak suku dan literasi </p>
-<h1 id="listing-program"><em>Listing Program</em><a class="headerlink" href="#listing-program" title="Permanent link">&para;</a></h1>
-<p>membuat program supaya dapaat mengekspansi bilangan e^3x dengan nilai x=inputan hingga nilai menjadi kurang dari 0,001 bisa dengan listing program sebagai berikut.</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<h3 id="teori"><strong>Teori</strong><a class="headerlink" href="#teori" title="Permanent link">&para;</a></h3>
+<p>Dalam rumus :</p>
+<p><strong><em>( f (x + h) - f (x - h) ) / (2 h)</em></strong></p>
+<p>untuk nilai h yang sangat kecil, dua fungsi evaluasi <em>f (x + h)</em> dan <em>f (x - h)</em> akan menjadi kira-kira sama, dan oleh karena itu pembatalan subtraktif akan terjadi. Oleh karena itu, tidak disarankan untuk menggunakan nilai h yang semakin kecil.</p>
+<p>Kita dapat mencoba untuk memperkirakan nilai tepat <em>e</em> dengan perkiraan <em>a(h)</em>. Dalam hal ini, <em>e</em> adalah turunan dari <em>f (1) (x)</em> dan perkiraannya adalah <em>( h ) = (f (x + h) - f (x - h)) / (2 h)</em>. Misalkan sekarang bahwa kesalahan aproksimasi didefinisikan oleh serangkaian bentuk Taylor :</p>
+<p align = "center"><i>e = a(h) + K h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-<span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;masukan nilai x=&quot;</span><span class="p">))</span>
-<span class="n">coba</span> <span class="o">=</span><span class="mi">1</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">b</span><span class="o">=</span><span class="mi">1</span>
-<span class="k">while</span> <span class="n">coba</span><span class="o">&gt;</span><span class="mf">0.001</span><span class="p">:</span>
-    <span class="n">f_x</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">f_y</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-        <span class="n">f_x</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">i</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<p>Apabila menggunakan <em>h / 2</em> :</p>
+<p align = "center"><i>e = a(h/2) + K (h/2)n + o((h/2)n)</i>
+<br><i>= a(h/2) + K/2n h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
-        <span class="n">f_y</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">3</span><span class="o">**</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="n">j</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;suku ke&quot;</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="n">f_x</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;suku ke&quot;</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span><span class="n">f_y</span><span class="p">)</span>
+<p>Mengalikan kedua ekspresi ini dengan 2<em>n</em> dan mengurangi hasil persamaan pertama</p>
+<p align = "center"><i>2n<sup>e</sup> − e = 2na(h/2) − a(h) + K/2n h<sup>n</sup> − K h<sup>n</sup> + o(h<sup>n</sup>)</i></p>
 
-    <span class="n">coba</span> <span class="o">=</span> <span class="n">f_y</span><span class="o">-</span><span class="n">f_x</span>
-    <span class="n">a</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="n">b</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;hasil seliih =&quot;</span><span class="p">,</span><span class="n">coba</span><span class="p">)</span>
+<p>Perhatikan bahwa istilah h<sup>n</sup> dibatalkan dan kita dibiarkan dengan</p>
+<p align = "center"><i>(2n − 1)e = 2na(h/2) − a(h) + o(h<sup>n</sup>)</i></p>
+
+<p>Jika kita melihat seri Taylor lengkap untuk rumus perbedaan-terpusat yang terpusat, kita perhatikan bahwa istilah kesalahannya dalam bentuk Knh<sup>n</sup>. Dapat kita tulis dengan :</p>
+<p align = center><i>K1 = −1/6 f(3)(x)h<sup>2</sup>, etc.</i></p>
+
+<h3 id="contoh-program"><strong>Contoh Program</strong><a class="headerlink" href="#contoh-program" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">Z</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">Z</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Z</span>
+
+<span class="k">def</span> <span class="nf">D</span><span class="p">(</span><span class="n">Func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">h</span><span class="p">)</span><span class="o">-</span><span class="n">Func</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">h</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Richardson_dif</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">):</span> 
+    <span class="sd">&#39;&#39;&#39;Richardson extrapolation method for numerical calculation of first derivative &#39;&#39;&#39;</span>
+    <span class="n">k</span><span class="o">=</span><span class="mi">9</span> 
+    <span class="n">L</span><span class="o">=</span><span class="n">zeros</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">I</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="n">L</span><span class="p">[</span><span class="n">I</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">D</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">I</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="n">j</span><span class="p">):</span>
+            <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="p">((</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">))</span><span class="o">*</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; DIFERENSIASI NUMERIK DARI &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;f = -0.1*x**4-0.15*x**3-0.5*x**2-0.25*x+1.2 dengan x = 0.5&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="p">,</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;=======================================================================&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;diff(2**cos(pi+sin(x)) dengan x = pi/2 adalah = </span><span class="si">%04.20f</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">Richardson_dif</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
 
-<p>output:</p>
-<div class="codehilite"><pre><span></span><span class="n">masukan</span> <span class="n">nilai</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">0</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">1</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">1</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">2</span> <span class="o">=</span> <span class="mf">4.0</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">3.0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">2</span> <span class="o">=</span> <span class="mf">4.0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">3</span> <span class="o">=</span> <span class="mf">8.5</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">4.5</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">3</span> <span class="o">=</span> <span class="mf">8.5</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">4</span> <span class="o">=</span> <span class="mf">13.0</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">4.5</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">4</span> <span class="o">=</span> <span class="mf">13.0</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">5</span> <span class="o">=</span> <span class="mf">16.375</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">3.375</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">5</span> <span class="o">=</span> <span class="mf">16.375</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">6</span> <span class="o">=</span> <span class="mf">18.4</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">2.0249999999999986</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">6</span> <span class="o">=</span> <span class="mf">18.4</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">7</span> <span class="o">=</span> <span class="mf">19.412499999999998</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">1.0124999999999993</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">7</span> <span class="o">=</span> <span class="mf">19.412499999999998</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">8</span> <span class="o">=</span> <span class="mf">19.846428571428568</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.4339285714285701</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">8</span> <span class="o">=</span> <span class="mf">19.846428571428568</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">9</span> <span class="o">=</span> <span class="mf">20.009151785714284</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.162723214285716</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">9</span> <span class="o">=</span> <span class="mf">20.009151785714284</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">10</span> <span class="o">=</span> <span class="mf">20.063392857142855</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.05424107142857082</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">10</span> <span class="o">=</span> <span class="mf">20.063392857142855</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">11</span> <span class="o">=</span> <span class="mf">20.079665178571425</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.016272321428569825</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">11</span> <span class="o">=</span> <span class="mf">20.079665178571425</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">12</span> <span class="o">=</span> <span class="mf">20.08410308441558</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.004437905844156376</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">12</span> <span class="o">=</span> <span class="mf">20.08410308441558</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">13</span> <span class="o">=</span> <span class="mf">20.08521256087662</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.001109476461039094</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">13</span> <span class="o">=</span> <span class="mf">20.08521256087662</span>
-<span class="n">suku</span> <span class="n">ke</span> <span class="mi">14</span> <span class="o">=</span> <span class="mf">20.08546859390609</span>
-<span class="n">hasil</span> <span class="n">seliih</span> <span class="o">=</span> <span class="mf">0.0002560330294691937</span>
+<h3 id="hasil-running"><strong>Hasil Running</strong><a class="headerlink" href="#hasil-running" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="n">DIFERENSIASI</span> <span class="n">NUMERIK</span> <span class="n">DARI</span> <span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+<span class="o">=======================================================================</span>
+<span class="n">f</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">-</span><span class="mf">0.15</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mf">1.2</span> <span class="n">dengan</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="o">=======================================================================</span>
+<span class="o">-</span><span class="mf">0.91250000000000530687</span>
+<span class="o">=======================================================================</span>
+<span class="n">diff</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">+</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="n">dengan</span> <span class="n">x</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mi">2</span> <span class="n">adalah</span> <span class="o">=</span> <span class="mf">0.16849558398154249050</span>
+<span class="o">&gt;&gt;&gt;</span> 
 </pre></div>
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$$','$$'],['$','$']]}
-});
-</script>
-
-<p><script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script></p>
                 
                   
                 
@@ -739,7 +704,7 @@ MathJax.Hub.Config({
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../index2/" title="index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../romberg/" title="method rumberg" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -748,25 +713,11 @@ MathJax.Hub.Config({
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                index
+                method rumberg
               </span>
             </div>
           </a>
         
-        
-          <a href="../Numerical Solution/" title="Numerical Solution" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Numerical Solution
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
